@@ -14,6 +14,8 @@ provider "aws" {
 }
 
 module"s3"{
-	source="git::https://github.com/IshaSingh0228/S3module.git"
+        source="git::git@github.com:IshaSingh0228/s3-Module.git"
+	 bucketname= var.bucket_name
+        tags = var.env
+}
 
-	}
